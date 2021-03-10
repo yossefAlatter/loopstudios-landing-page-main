@@ -1,0 +1,122 @@
+/** our creations section style **/
+/** start **/
+
+.our-creation{
+    padding-bottom: 186px;
+}
+.our-creation-heeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 92px;
+}
+.our-creation-heeader > h2{
+    color: var(--blackColor);
+    font-family: var(--Font2);
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 400;
+}
+.our-creation-heeader > button, .mb-btn{
+    background-color: var(--whiteColor);
+    border: 1px solid var(--blackColor);
+    width: 159px;
+    height: 46px;
+    text-transform: uppercase;
+    font-family: var(--Font1);
+    font-size: 1.2em;
+    font-weight: 300;
+    word-spacing: 3px;
+    cursor: pointer;
+}
+.our-creation-heeader > button:hover{
+    transition: all 0.3s;
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+}
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+}
+.items > .item{
+    position: relative;
+}
+.items > .item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    opacity: 0.5;
+    background-color: var(--whiteColor);
+    transition: all 0.5s;
+}
+.items > .item:hover{
+    cursor: pointer;
+}
+.items > .item:hover::before{
+    cursor: pointer;
+    height: 100%;
+}
+.items > .item:hover > .item-text > span {
+    color: var(--blackColor);
+}
+.items > .item > .item-img{
+    width: 100%;
+}
+.items > .item > .item-img > img{
+    width: 100%;
+}
+.items > .item > .item-text{
+    position: absolute;
+    bottom: 47px;
+    left: 40px;
+    z-index: 999;
+    max-width: 155px;
+}.items > .item > .item-text > span {
+    color: var(--whiteColor);
+    font-family: var(--Font2);
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+
+/** end **/
+/** our creations section media **/
+/** start **/
+@media screen and (max-width: 990px){
+    .our-creation{
+        padding-bottom: 90px;
+    }
+    .our-creation-heeader{
+        justify-content: center;
+    }
+    .our-creation-heeader > h2{
+        font-size: 2.4em;
+        text-align: center;
+    }
+    .items{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+    .mb-btn-con{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+    .mb-btn{
+        margin-top: 70px;
+    }
+    .items > .item > .item-text{
+        bottom: 25px;
+        left: 20px;
+    }
+    .items > .item > .item-text > span{
+        font-size: 1.5em;
+    }
+}
+/** end **/

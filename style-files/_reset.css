@@ -1,0 +1,111 @@
+/** reset margin and padding to all elements **/
+/** start **/
+* , ::after , ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/** end **/
+
+/** reset scrollbar style **/
+/** start **/
+@media screen and (min-width: 990px){
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}
+/** end **/
+
+/** font that will inhiert for all project elements **/
+/** start **/
+body{
+    font-size: 15px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(221, 219, 219, 0.527);
+    
+}
+/** end **/
+
+/** large screen saver **/
+/** start **/
+.large-screen-saver{
+    max-width: 1550px;
+    position: relative;
+    background-color: var(--whiteColor);
+    width: 100%;
+}
+/** end **/
+
+/** reset style for all ul lists **/
+/** start **/
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+/** end **/
+
+/** reset style for all anchor tag elements **/
+/** start **/
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+/** end **/
+
+/** container for my project **/
+/** start **/
+.container{
+    padding-left: 160px;
+    padding-right: 160px;
+}
+/** end **/
+/** container media **/
+/** start **/
+@media screen and (max-width: 1200px){
+    .container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 990px){
+    .container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+/** end **/
+
+/** reset media for elements in different media **/
+/** start **/
+@media screen and (min-width: 990px){
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none ;
+    }
+}
+@media screen and (max-width: 990px){
+    .desktop{
+        display: none ;
+    }
+    .mobile{
+        display: block ;
+    }
+}
+/** end **/

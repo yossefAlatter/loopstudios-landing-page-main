@@ -1,0 +1,60 @@
+/** style of leader interactive vr section **/
+/** start **/
+
+.leader-interactive-vr{
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+.sub-container{
+    position: relative;
+}
+.sub-container > .photo-description{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 550px;
+    background-color: var(--whiteColor);
+    padding-top: 94px;
+    padding-left: 99px;
+}
+.sub-container > .photo-description > h2{
+    margin-bottom: 46px;
+    color: var(--blackColor);
+    font-family: var(--Font2);
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 400;
+}
+.sub-container > .photo-description > p{   
+    font-family: var(--Font1);
+    color: var(--veryDarkGrayColor);
+    font-size: 1em;
+}
+
+/** end **/
+
+/** media of leader interactive vr section **/
+/** start **/
+@media screen and (max-width: 990px){
+    .leader-interactive-vr{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .sub-container > .photo-description{
+        position: static;
+        text-align: center;
+        padding: 0;
+    }
+    .leader-img-con > img {
+        max-width: 100%;
+    }
+    .sub-container > .photo-description > h2{
+        font-size: 2.4em;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .sub-container > .photo-description > p{
+        font-size: 0.8em;
+    }
+}
+/** end **/
